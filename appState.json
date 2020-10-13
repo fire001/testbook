@@ -1,0 +1,122 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "fd4d1fc6-48e4-4ce9-9d79-d1b16a157be9": {
+        "id": "fd4d1fc6-48e4-4ce9-9d79-d1b16a157be9",
+        "parent": null,
+        "name": "testBook.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "testBook.js",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 1
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "testBook"
+        },
+        "triggers": [
+          {
+            "resourceName": "alexaSKfcb7fc5bf4234ca2b07c07d0442089d8",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1602618661127
+      }
+    },
+    "openFiles": [
+      "fd4d1fc6-48e4-4ce9-9d79-d1b16a157be9"
+    ],
+    "currentFileId": "fd4d1fc6-48e4-4ce9-9d79-d1b16a157be9",
+    "resources": {
+      "alexaSKfcb7fc5bf4234ca2b07c07d0442089d8": {
+        "name": "alexaSKfcb7fc5bf4234ca2b07c07d0442089d8",
+        "type": "ALEXA",
+        "config": {
+          "type": 1,
+          "verifiedID": true,
+          "skillID": "amzn1.ask.skill.fcb7fc5b-f423-4ca2-b07c-07d0442089d8",
+          "applicationID": ""
+        }
+      },
+      "ddbbooks": {
+        "name": "ddbbooks",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:123314105720:table/books",
+            "name": "books",
+            "partitionKey": "@{book}",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "",
+            "payPerRequest": true,
+            "mode": 1,
+            "secondaryIndexes": {}
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "ask-sdk": {
+          "name": "ask-sdk",
+          "language": "nodejs",
+          "version": "2.7.0",
+          "dev": false,
+          "notRemovable": false
+        },
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.3.1",
+    "projectName": "testBook",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1602619713165
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "testbook",
+      "url": "https://github.com/fire001/testbook"
+    }
+  }
+}
