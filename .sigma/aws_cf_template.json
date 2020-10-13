@@ -92,7 +92,7 @@
                   "Action": [
                     "dynamodb:GetItem"
                   ],
-                  "Resource": "arn:aws:dynamodb:us-east-1:123314105720:table/books"
+                  "Resource": "arn:aws:dynamodb:us-east-1:123314105720:table/libro"
                 }
               ]
             }

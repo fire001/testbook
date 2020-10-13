@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "testBook.js",
         "cursor": {
-          "lineNumber": 1,
-          "column": 1
+          "lineNumber": 35,
+          "column": 18
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -55,6 +55,25 @@
             "arn": "arn:aws:dynamodb:us-east-1:123314105720:table/books",
             "name": "books",
             "partitionKey": "@{book}",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "",
+            "payPerRequest": true,
+            "mode": 1,
+            "secondaryIndexes": {}
+          }
+        }
+      },
+      "ddblibro": {
+        "name": "ddblibro",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:123314105720:table/libro",
+            "name": "libro",
+            "partitionKey": "test",
             "partitionKeyType": "S",
             "hasSortKey": false,
             "sortKey": "",
@@ -110,7 +129,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1602619713165
+    "lastSave": 1602620101982
   },
   "VCS_STATE": {
     "provider": "GitHub",

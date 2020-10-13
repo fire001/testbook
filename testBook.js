@@ -29,12 +29,12 @@ const testBookHandler = {
         let speechText = 'none';
         try {
             let data = await ddb.get({
-                TableName: "books",
+                TableName: "libro",
                 Key: {
-                    [book]: book
+                    test: test
                 }
             }).promise();
-            speechText = 'este es mi libro' + data.Item.book;
+            speechText = 'este es mi libro' + data.Item.Book;
 
         } catch (err) {
             speechText = 'manin no encuentro ese libro';
